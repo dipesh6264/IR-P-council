@@ -107,11 +107,30 @@
     margin-left: 0px;
   }
   
-  .team-img {
-    width: 100%;
-    height: 100%;
-  }
+  /* .team-img {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+  } */
   
+  .team-img {
+    width: 100%; /* Adjust to your preference */
+    max-width: 200px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    border: 4px solid rgb(251, 252, 252); /* Add a border around the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Apply a subtle shadow effect */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition on hover */
+
+    /* Center the image within its container */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Add a hover effect to scale the image slightly */
+.team-img:hover {
+    transform: scale(1.05);
+}
   .team-card-container {
     width: 280px;
     margin: 0 0 40px 0;

@@ -10,7 +10,8 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  
+  font-family: Nunito, sans-serif  !important;
   color: #444444;
 }
 

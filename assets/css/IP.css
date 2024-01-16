@@ -82,15 +82,20 @@ body{
   padding-bottom: 0;
   border-bottom: none;
 }   
-img {
+/* img {
     width: 85%;
     max-width: 100%;
     height: auto;
     margin-left: 80px;
     -webkit-backface-visibility: hidden;
-}
+} */
 .rounded {
     border-radius: 5px !important;
+    width: 85%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 80px;
+    -webkit-backface-visibility: hidden;
 }
 .btn-xs.btn-icon {
     width: 34px;

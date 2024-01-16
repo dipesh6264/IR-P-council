@@ -94,7 +94,9 @@ body{
     width: 85%;
     max-width: 100%;
     height: auto;
-    margin-left: 80px;
+    margin-left: 25px;
+    align-items: center;
+    justify-content: center;
     -webkit-backface-visibility: hidden;
 }
 .btn-xs.btn-icon {

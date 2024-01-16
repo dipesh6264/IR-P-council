@@ -256,3 +256,23 @@
   });
 
 })()
+
+
+
+// contact form  
+document.addEventListener('DOMContentLoaded', function () {
+  // Find the Contact Us button
+  var contactButton = document.querySelector('.btn-learn-more');
+
+  // Find the Contact section
+  var contactSection = document.getElementById('contact');
+
+  // Add click event listener to the button
+  contactButton.addEventListener('click', function () {
+      // Display the contact section
+      contactSection.style.display = 'block';
+
+      // Scroll to the contact section smoothly
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+  });
+});

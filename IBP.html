@@ -41,7 +41,7 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto " href="index.html">Home</a></li>
-                    <li><a class="nav-link scrollto " href="event.html">Event</a></li>
+                    <li><a class="nav-link scrollto " href="event.html">Events</a></li>
                     <li><a class="nav-link scrollto " href="IP.html">Industrial Projects</a></li>
                     <li><a class="nav-link scrollto active" href="IBP.html">Institute Building Projects</a></li>
                     <li><a class="nav-link scrollto " href="team.html">Team</a></li>
@@ -75,7 +75,7 @@
                     <p><b>Tech Stack:</b> React js with TypeScript, NodeJs, ExpressJs, Socket.io, MongoDB(Database), AWS(Deployment)</p>
                     <p><b>Incentives:</b> Rs 150 per hour</p>
                     <p><b>Mentees:</b> Karan Gandhi [BTech,23 CSE], Romit Mohane [BTech'23 Mechanical]</p>
-                    <a href="#" class="btn btn-primary c-block margin-10px-left" onclick="showDescription1()">VIEW
+                    <a  class="btn btn-primary c-block margin-10px-left" onclick="showDescription1()">VIEW
                         PROJECT</a>
                 </div>
                 <!-- / project-info-box -->
@@ -111,7 +111,7 @@
                     <p><b>Tech Stack:</b> Python and Web Scraping</p>
                     <p><b>Incentives:</b> Rs 150 per hour</p>
                     <p><b>Mentees:</b> Neerja Kasture [BTech'22 CSE], Nimitt [BTech'22 CSE]</p>
-                    <a href="#" class="btn btn-primary c-block margin-10px-left" onclick="showDescription2()">VIEW
+                    <a  class="btn btn-primary c-block margin-10px-left" onclick="showDescription2()">VIEW
                         PROJECT</a>
                 </div>
                 <!-- / project-info-box -->
@@ -150,7 +150,7 @@
                     <p><b>Tech Stack:</b>  HTML, CSS, Jquery, Javascript, WAMP (Windows, Apache, MySQL, PHP)</p>
                     <p><b>Incentives:</b> Rs 150 per hour</p>
                     <p><b>Mentees:</b> Chandrabhan Patel [BTech'22 CSE],  Rishab Jain [BTech'20 Chemical] </p>
-                    <a href="#" class="btn btn-primary c-block margin-10px-left" onclick="showDescription3()">VIEW
+                    <a  class="btn btn-primary c-block margin-10px-left" onclick="showDescription3()">VIEW
                         PROJECT</a>
                 </div>
                 <!-- / project-info-box -->
@@ -188,7 +188,7 @@
                   <p>
                     IIT Gandhinagar<br>
                     Gandhinagar, Gujarat<br>
-                    India <br><br>
+
                     <strong>Phone:</strong> +91 8826027282<br>
                     <strong>Email:</strong> irp.secretary@iitgn.ac.in<br>
                   </p>
@@ -198,15 +198,15 @@
                   <h4>Useful Links</h4>
                   <ul>
                     <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="index.html#about">About us</a></li>
+                    <!-- <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li> -->
                     <li><i class="bx bx-chevron-right"></i> <a href="team.html">Our Team</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contacts Us</a></li>
+                    <!-- <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contacts Us</a></li> -->
                   </ul>
                 </div>
       
                 <div class="col-lg-3 col-md-6 footer-links">
-                  <h4>Our Services</h4>
+                  <h4>Our Domains</h4>
                   <ul>
                     <li><i class="bx bx-chevron-right"></i> <a href="IP.html">Industrial Projects</a></li>
                     <li><i class="bx bx-chevron-right"></i> <a href="IBP.html">Institute Building Projects</a></li>
@@ -261,6 +261,7 @@
             // Get a reference to the project description and image
             const projectDescription3 = document.getElementById("project-description3");
             const projectImage3 = document.getElementById("project-image3");
+            document.body.classList.toggle('stationary');
 
             // Set the description text and image opacity
             projectDescription3.innerHTML = `
@@ -281,6 +282,7 @@
             // Get a reference to the project description and image
             const projectDescription1 = document.getElementById("project-description1");
             const projectImage1 = document.getElementById("project-image1");
+            document.body.classList.toggle('stationary');
 
             // Set the description text and image opacity
             projectDescription1.innerHTML = `
@@ -302,7 +304,7 @@
             // Get a reference to the project description and image
             const projectDescription2 = document.getElementById("project-description2");
             const projectImage2 = document.getElementById("project-image2");
-
+            document.body.classList.toggle('stationary');
             // Set the description text and image opacity
             projectDescription2.innerHTML = `
             <h4 class="heading">Description</h4>

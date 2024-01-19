@@ -56,7 +56,82 @@
     <div class="container">
 
         <div class="headline">Active Projects</div>
-        No Active project
+        <div class="row list-project">
+
+            <!-- / column -->
+            <div class="col-md-5">
+                <div class="project-info-box mt-0">
+                    <h5>              Echoes      </h5>
+                    <!-- <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna
+                        vel erat.</p> -->
+                </div>
+                <!-- / project-info-box -->
+
+                <div class="project-info-box mb-10">
+                    <p><b>Company:</b> Technoculture Reseach</p>
+                    <p><b>Duration:</b> 6 Months</p>
+                    <p><b>Dedline:</b> "16/12/23 Saturday 11:59 P.M."</p>
+                    <p><b>Incentives:</b> Rs 18K /month+certificate+LOR+possiblity of intern in the respective company.</p>
+                    <p><b>POC:</b> Dhruv Sharma</p>
+                    <p><b>Stack</b> 
+                         Language: Python
+                        / Framework: FastAPI
+                        / Key Technologies: Kafka, Web Sockets
+                        / Prompting: Dspy, Langchain
+                        / Fine-tuning: Axolotl, Huggingface.</p>
+                    <a  class="btn btn-primary c-block margin-10px-left" onclick="showDescription1a()">VIEW
+                        PROJECT</a>
+                </div>
+                <!-- / project-info-box -->
+
+                
+                <!-- <a href="#" class="btn btn-primary c-block">Apply</a> -->
+
+            </div>
+            <div class="col-md-7">
+                <img src="https://img.freepik.com/free-photo/shopping-cart-commerce-graphic-symbol-icon_53876-120167.jpg?size=626&ext=jpg&ga=GA1.1.123733343.1681604264&semt=ais" alt="project-image" id="project-image1a"
+                    class="rounded">
+                <div id="project-description1a" class="project-description"></div>
+            </div>
+            <!-- / column -->
+        </div>
+
+
+        <div class="row list-project">
+
+            <!-- / column -->
+            <div class="col-md-5">
+                <div class="project-info-box mt-0">
+                    <h5>               Development of embedded application using VB.Net      </h5>
+                    <!-- <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna
+                        vel erat.</p> -->
+                </div>
+                <!-- / project-info-box -->
+
+                <div class="project-info-box mb-10">
+                    <p><b>Company:</b> Biotech Vision Care Ltd</p>
+                    <p><b>Duration:</b> 4-6 Months</p>
+                    <p><b>Dedline:</b> 6th Jan 2024</p>
+                    <p><b>Incentives:</b> Rs 20k-30k per person</p>
+                    <p><b>POC:</b> Bhavesh Jain</p>
+                    
+                    <a  class="btn btn-primary c-block margin-10px-left" onclick="showDescription2a()">VIEW
+                        PROJECT</a>
+                </div>
+                <!-- / project-info-box -->
+
+                
+                <!-- <a href="#" class="btn btn-primary c-block">Apply</a> -->
+
+            </div>
+            <div class="col-md-7">
+                <img src="https://img.freepik.com/free-photo/shopping-cart-commerce-graphic-symbol-icon_53876-120167.jpg?size=626&ext=jpg&ga=GA1.1.123733343.1681604264&semt=ais" alt="project-image" id="project-image2a"
+                    class="rounded">
+                <div id="project-description2a" class="project-description"></div>
+            </div>
+            <!-- / column -->
+        </div>
+        
         <div class="headline">Past Projects</div>
         <div class="row list-project">
 
@@ -139,7 +214,7 @@
             <!-- / column -->
             <div class="col-md-5">
                 <div class="project-info-box mt-0">
-                    <h5>External Communication Website</h5>
+                    <h5>Soldier Powered with AGI </h5>
                     <!-- <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna
                         vel erat.</p> -->
                 </div>
@@ -256,7 +331,36 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script>function showDescription3() {
+    <script>
+    function showDescription1a() {
+            // Get a reference to the project description and image
+            const projectDescription1a = document.getElementById("project-description1a");
+            const projectImage1a = document.getElementById("project-image1a");
+
+            // Set the description text and image opacity
+            projectDescription1a.innerHTML = `
+            <h4 class="heading">Description</h4>
+            <p class="headingbelow">"
+Ella is a personal healthcare app. It aims to bring accessibility to everyday healthcare needs. Ella provides an AI first telemedicine app with built in diagnostics service, doctor consultancy and an online pharmacy.
+
+The aim of Ella is to use RAG, Knowledge databases, LLMs and function calling to create a platform that makes health intuitive for everyone.
+
+The aim of an intensive 6 month internship would be to evaluate and fine-tune base models as well as engineer prompting chains in order to build an appropriate healthcare assistant model.
+Intern should meet these criteria:
+- Interested in how things work
+- Be able to learn new concepts and libraries quickly 
+- Don't give up easily 
+- Has tried building a few python projects
+2 people would be hired for this project."</p>
+        `;
+            projectImage1a.style.opacity = "0.6"; // Decrease opacity
+            projectImage1a.style.position = "relative";
+            projectImage1a.style.display = "none";
+            projectImage1a.style.zIndex = "-1000";
+
+            // You can modify the description text dynamically or load it from somewhere else.
+        }
+    function showDescription3() {
             // Get a reference to the project description and image
             const projectDescription3 = document.getElementById("project-description3");
             const projectImage3 = document.getElementById("project-image3");
@@ -311,6 +415,24 @@
             projectImage2.style.position = "relative";
             projectImage2.style.display = "none";
             projectImage2.style.zIndex = "-1000";
+
+            // You can modify the description text dynamically or load it from somewhere else.
+        }
+
+        function showDescription2a() {
+            // Get a reference to the project description and image
+            const projectDescription2a = document.getElementById("project-description2a");
+            const projectImage2a = document.getElementById("project-image2a");
+
+            // Set the description text and image opacity
+            projectDescription2a.innerHTML = `
+            <h4 class="heading">Description</h4>
+            <p class="headingbelow">The students would be developing embedded applications using VB net in collaboration with Prof Sameer Kulkarni, IITGN.</p>
+        `;
+            projectImage2a.style.opacity = "0.6"; // Decrease opacity
+            projectImage2a.style.position = "relative";   
+            projectImage2a.style.display = "none";
+            projectImage2a.style.zIndex = "-1000";
 
             // You can modify the description text dynamically or load it from somewhere else.
         }

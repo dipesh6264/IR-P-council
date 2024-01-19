@@ -472,7 +472,7 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://script.google.com/macros/s/AKfycbyBeKfJAeqE8n0gUMyU2BZGs4khJYAnnPd4qzCfMFReplSjv82lVbH5d6ebKEzIOQkj/exec" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -493,7 +493,7 @@
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
-                <div class="error-message"></div>
+                <!-- <div class="error-message"></div> -->
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
@@ -532,13 +532,13 @@
               <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
               <!-- <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li> -->
-              <li><i class="bx bx-chevron-right"></i> <a href="team.html">Our Domains</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="team.html">Our Team</a></li>
               <!-- <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contacts Us</a></li> -->
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Our Domains</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="IP.html">Industrial Projects</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="IBP.html">Institute Building Projects</a></li>
@@ -595,7 +595,18 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-
+  <script>
+    const scriptURL = ''
+    const form = document.forms['formName']
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thank you! your form is submitted successfully." ))
+      .then(() => {  window.location.reload(); })
+      .catch(error => console.error('Error!', error.message))
+    })
+    </script>
 </body>
 
 </html>

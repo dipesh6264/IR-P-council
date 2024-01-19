@@ -85,7 +85,7 @@
 
             </div>
             <div class="col-md-7">
-                <img src="https://img.freepik.com/free-photo/shopping-cart-commerce-graphic-symbol-icon_53876-120167.jpg?size=626&ext=jpg&ga=GA1.1.123733343.1681604264&semt=ais" alt="project-image" id="project-image1"
+                <img src="assets/img/ibp/interiit.jpg" alt="project-image" id="project-image1"
                     class="rounded">
                 <div id="project-description1" class="project-description"></div>
             </div>
@@ -123,7 +123,7 @@
             <!-- / column -->
 
             <div class="col-md-7">
-                <img src="https://img.freepik.com/free-photo/shopping-cart-commerce-graphic-symbol-icon_53876-120167.jpg?size=626&ext=jpg&ga=GA1.1.123733343.1681604264&semt=ais" alt="project-image" id="project-image2"
+                <img src="assets/img/ibp/faculty.jpg" alt="project-image" id="project-image2"
                     class="rounded">
                 <div id="project-description2" class="project-description"></div>
             </div>
@@ -159,9 +159,45 @@
                 <!-- <a href="#" class="btn btn-primary c-block">Apply</a> -->
             </div>
             <div class="col-md-7">
-                <img src="https://img.freepik.com/free-photo/shopping-cart-commerce-graphic-symbol-icon_53876-120167.jpg?size=626&ext=jpg&ga=GA1.1.123733343.1681604264&semt=ais" alt="project-image" id="project-image3"
+                <img src="assets/img/ibp/externalcom.jpg" alt="project-image" id="project-image3"
                     class="rounded">
                 <div id="project-description3" class="project-description"></div>
+            </div>
+            <!-- / column -->
+        </div>
+        <!-- / row list-project -->
+
+        <div class="spacer-line-fw border-secondary opc-25 mt-30 mb-30">&nbsp;</div>
+       
+        <div class="row list-project">
+
+            <!-- / column -->
+            <div class="col-md-5">
+                <div class="project-info-box mt-0">
+                    <h5>Food Wastage Prevention System</h5>
+                    <!-- <p>Suspendisse convallis, magna in blandit dapibus, diam dui ultrices sem, ut egestas neque magna
+                        vel erat.</p> -->
+                </div>
+                <!-- / project-info-box -->
+
+                <div class="project-info-box mb-10">
+                    <p><b>Mentor:</b>Prof. Tarun Agarwal</p>
+                    <p><b>Duration:</b> 4 months</p>
+                    <!-- <p><b>Tech Stack:</b>  HTML, CSS, Jquery, Javascript, WAMP (Windows, Apache, MySQL, PHP)</p> -->
+                    <p><b>Incentives:</b> Rs 150 per hour</p>
+                    <p><b>Mentees:</b> Raghavpravin K S, Ruchit Chudasama                </p>
+                    <a  class="btn btn-primary c-block margin-10px-left" onclick="showDescription4()">VIEW
+                        PROJECT</a>
+                </div>
+                <!-- / project-info-box -->
+
+                
+                <!-- <a href="#" class="btn btn-primary c-block">Apply</a> -->
+            </div>
+            <div class="col-md-7">
+                <img src="assets/img/ibp/food.jpg" alt="project-image" id="project-image4"
+                    class="rounded">
+                <div id="project-description4" class="project-description"></div>
             </div>
             <!-- / column -->
         </div>
@@ -257,7 +293,27 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script>function showDescription3() {
+    <script>
+    function showDescription4() {
+            // Get a reference to the project description and image
+            const projectDescription4 = document.getElementById("project-description4");
+            const projectImage4 = document.getElementById("project-image4");
+            document.body.classList.toggle('stationary');
+
+            // Set the description text and image opacity
+            projectDescription4.innerHTML = `
+            <h4 class="heading">Description</h4>
+            <p class="headingbelow">Implementing an IoT-based Food Wastage Prevention System with facial recognition for mess facilities. The system, powered by an image sensor, load cell, and Raspberry Pi, captures real-time data, displaying it on an admin panel for informed decision-making. Our prototype showcases a significant contribution to daily operations, promoting sustainable development goals.</p>
+        `;
+            projectImage4.style.opacity = "0.6"; // Decrease opacity
+            projectImage4.style.position = "relative";
+            projectImage4.style.display = "none";
+            projectImage4.style.zIndex = "-1000";
+
+            // You can modify the description text dynamically or load it from somewhere else.
+        }
+    
+    function showDescription3() {
             // Get a reference to the project description and image
             const projectDescription3 = document.getElementById("project-description3");
             const projectImage3 = document.getElementById("project-image3");
